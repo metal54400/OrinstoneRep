@@ -1,0 +1,73 @@
+# ==========================================
+#   OrinstoneRep - Configuration (Small Caps Edition)
+# ==========================================
+
+score:
+  min: -120
+  max: 120
+  daily-bonus: 1
+
+repeat-kill:
+  enabled: true
+  max-kills-before-penalty: 2
+  penalty: 1
+  window-hours: 24
+
+tiers:
+  horrible:
+    min: -120
+    max: -81
+    display: "&4&l⚠ ʜᴏʀʀɪʙʟᴇ"
+    color: "&4"
+    icon: "&4&l⚠"
+  mauvaise:
+    min: -80
+    max: -31
+    display: "&c&l✖ ᴍᴀᴜᴠᴀɪsᴇ"
+    color: "&c"
+    icon: "&c&l✖"
+  dangereuse:
+    min: -30
+    max: -1
+    display: "&6&l⚡ ᴅᴀɴɢᴇʀᴇᴜsᴇ"
+    color: "&6"
+    icon: "&6&l⚡"
+  neutre:
+    min: 0
+    max: 0
+    display: "&7&l◈ ɴᴇᴜᴛʀᴇ"
+    color: "&7"
+    icon: "&7&l◈"
+  correcte:
+    min: 1
+    max: 40
+    display: "&a&l✔ ᴄᴏʀʀᴇᴄᴛᴇ"
+    color: "&a"
+    icon: "&a&l✔"
+  bonne:
+    min: 41
+    max: 80
+    display: "&2&l★ ʙᴏɴɴᴇ"
+    color: "&2"
+    icon: "&2&l★"
+  honorable:
+    min: 81
+    max: 120
+    display: "&b&l✦ ʜᴏɴᴏʀᴀʙʟᴇ"
+    color: "&b"
+    icon: "&b&l✦"
+
+messages:
+  prefix: "&8&l[&b&lᴏʀɪɴsᴛᴏɴᴇʀᴇᴘ&8&l] &r"
+  rep-self: "&7ᴠᴏᴛʀᴇ ʀéᴘᴜᴛᴀᴛɪᴏɴ : {tier} &r&8(&f{score} ᴘᴛs&8)"
+  rep-other: "&7ʀéᴘᴜᴛᴀᴛɪᴏɴ ᴅᴇ &f{player} &7: {tier} &r&8(&f{score} ᴘᴛs&8)"
+  rep-updated: "&7ʀéᴘᴜᴛᴀᴛɪᴏɴ ᴅᴇ &f{player} &7: &e{old} &8» &b{new} &7ᴘᴛs"
+  daily-bonus: "&a&l+ &7ʙᴏɴᴜs ǫᴜᴏᴛɪᴅɪᴇɴ : &f+{amount} &7ᴘᴏɪɴᴛ(s) !"
+  no-permission: "&c&l✕ &7ᴠᴏᴜs ɴ'ᴀᴠᴇᴢ ᴘᴀs ʟᴀ ᴘᴇʀᴍɪssɪᴏɴ."
+  player-not-found: "&c&l✕ &7ᴊᴏᴜᴇᴜʀ ɪɴᴛʀᴏᴜᴠᴀʙʟᴇ."
+  invalid-number: "&c&l✕ &7ᴠᴀʟᴇᴜʀ ɪɴᴠᴀʟɪᴅᴇ. ᴇɴᴛʀᴇᴢ ᴜɴ ɴᴏᴍʙʀᴇ ᴇɴᴛɪᴇʀ."
+  usage-admin: "&6&l! &7ᴜsᴀɢᴇ : &f/ʀᴇᴘᴀᴅᴍɪɴ <sᴇᴛ|ᴀᴅᴅ|ʀᴇᴍᴏᴠᴇ|ʀᴇsᴇᴛ> <ᴊᴏᴜᴇᴜʀ> [ᴠᴀʟᴇᴜʀ]"
+  reload: "&a&l✔ &7ᴄᴏɴғɪɢᴜʀᴀᴛɪᴏɴ ʀᴇᴄʜᴀʀɢéᴇ ᴀᴠᴇᴄ sᴜᴄᴄès."
+  repeat-kill-penalty: "&c&l⚠ &7ᴋɪʟʟ ʀéᴘéᴛé sᴜʀ &f{victim} &7: &4-{amount} &7ʀéᴘ."
+
+log-changes: true

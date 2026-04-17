@@ -1,0 +1,25 @@
+name: OrinstoneRep
+version: '${version}'
+main: fr.orinstonerep.OrinstoneRep
+api-version: '1.21'
+description: Système de réputation Orinstone
+authors: [Orinstone]
+softdepend: [PlaceholderAPI]
+
+commands:
+  rep:
+    description: Voir la réputation d'un joueur
+    usage: /rep [joueur]
+    aliases: [reputation]
+  repadmin:
+    description: Commandes admin de réputation
+    usage: /repadmin <set|add|remove|reset|reload> <joueur> [valeur] [raison]
+    permission: orinstonerep.admin
+
+permissions:
+  orinstonerep.admin:
+    description: Accès aux commandes admin
+    default: op
+  orinstonerep.see:
+    description: Voir la réputation des autres
+    default: true
